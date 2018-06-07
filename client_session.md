@@ -134,6 +134,6 @@ Period is the time in milliseconds between automatically transmitted rows.
 
 Trigger is a selected trigger among the available triggers.
 
-### Informatin area
+### Information area
 
 Information about a selected event in the receive list is shown in the information area.
