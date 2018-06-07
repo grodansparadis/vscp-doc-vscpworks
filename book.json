@@ -1,0 +1,7 @@
+{
+    "title":"VSCP Works",
+    "description":"This is the official documentation for VSCP Works",
+    "author":"Ake Hedman, Grodans Paradis AB",
+    "language":"en",
+    "plugins" : ["anchors"]
+}
