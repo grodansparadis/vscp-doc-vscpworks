@@ -219,6 +219,8 @@ You can load events from disk and investigate them at a later time if you like.
 You can use the session connect/disconnect button to connect or disconnect the remote node. This may be useful if you have a lot of events coming in and you want to stop and investigate them. Just temporarily disconnect the session and do your investigation and connect again when you are ready. No need to close the session window.
 
 ### Multiple session windows
-You can always have multiple session windows open at the same time too the same remote device if you connect over tcp/ip. This for example makes it possible to have session windows with different filters open at the same time.
+You can (almost) always have multiple session windows open at the same time too the same remote device if you connect over tcp/ip. This for example makes it possible to have session windows with different filters open at the same time. The exception is when you connect to a remote node that only accept one connection at a time. Usually resource limited devices.
 
-For a Level I (CANAL) connection this depens on the driver. Most driver just accept one connection. Some accept several. Check the documentation for the driver.
+For a Level I (CANAL) connection this depends on the driver. Most driver just accept one connection. Some accept several. Check the documentation for the driver to find out.
+
+{% include "./bottom_copyright.md" %}
