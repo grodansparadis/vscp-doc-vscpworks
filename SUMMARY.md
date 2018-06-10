@@ -3,7 +3,7 @@
 ## Overview
 
 * [Abstract](README.md)
-* [A short introduction](intro.md)
+* [Intro](intro.md)
 * [Configuration](configure.md)
 
 ## VSCP Works functionality

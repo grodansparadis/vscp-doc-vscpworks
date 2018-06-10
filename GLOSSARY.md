@@ -39,3 +39,6 @@ Acronym for **Event-Decision-Action**
 
 ## OS
 Operating System
+
+## MDF
+Module Description File
