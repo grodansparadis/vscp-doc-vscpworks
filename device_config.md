@@ -1,14 +1,21 @@
 # Device configuration window
 
-
-
 The node configuration window can be used to set parameters for a remote node. It's main use is for developers as it will not display a remote nodes content in the most user friendly way. Still it can be useful also for (at least anvanced) users when editing and investigating registers on remote nodes. 
+
+In the window you can
+
+* **Handling register** values on all pages of the remote device inluding standard registers.
+* Read/write values from/to a node through it's defined **abstractions**. Abstraction is a way for a remote node to present it's settings and other variables in a high level way.
+* Read and program a remote nodes **decision matrix** if it has one.
+* Investigate and run **wizards** defined for the remote node. Wizards are setup and configuration sequence's node defines for it's own setup that walk a user through the setup steps in a user friendly way.
 
 On Ubuntu Linux this window looks like this
 
 ![](./images/screenshot_vscpworks_config.png)
 
 In the above screenshot we have highlighted the registry entry that set the interval for temperature reports on the [CAN4VSCP Kelvin module](http://www.grodansparadis.com/kelvinntc10k/kelvin_ntc10ka.html). To change it one just click on the value and select update. The operations are the same if the module is locally connected or located on the other side of the earth.
+
+## Registers
 
 ![](./images/vscpworks_registers2.jpg)
 
@@ -34,5 +41,25 @@ The nodeid field looks different when connected to a remote node or to a local L
 To the right of the node-id field is a ***search button**. It can be used to check that a node with the entered node-id really is present.
 
 The connected/disconnected button tell if the connection to the server is active or not and can also be used to disconnect/reconnect the connection.
+
+### Register row right click options
+
+When you right click on a register row you get the following options
+
+* **Read value(s)** for selected row(s). - Read the selected register content. Can be useful when registers contains measurements or other values that dynamically change.
+* **Write value(s)** for selected row(s). - Write the values of the selected registers to the remote node. The written value is validated.
+* **Undo value(s)** for selected row(s). - Undo the changed values for the selected rows.
+* **Write default(s)** for selected row(s). - Set default values for selected rows and write them to the remote node.
+* **Goto register page...** - Got to a specific rregister page. The firts ten register pages can be reached from menu's (Navigate) or with short commands **ctrl+0** -- **ctrl+9**
+
+
+## Abstractions
+
+## Decision Matrix
+
+## Wizards
+
+
+
 
 {% include "./bottom_copyright.md" %}
