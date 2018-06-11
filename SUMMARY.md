@@ -14,7 +14,7 @@
 * [Bootloader window](bootloader.md)
 
 ## Using VSCP Works
-TODO
+* [Get information about a new device](investigate_device.md)
 
 
 ## Appendix
