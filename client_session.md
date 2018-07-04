@@ -202,11 +202,11 @@ Here you get information on
 * Head code
 * Timestamp.
 
-The event here is [CLASS1_MEASUREMENT. Type=6,Temperature](https://grodansparadis.gitbooks.io/the-vscp-specification/class1.measurement.html#type6-0x06-temperature)
+The event here is [CLASS1_MEASUREMENT. Type=6,Temperature](https://grodansparadis.gitbooks.io/the-vscp-specification/class1.measurement.html#type6)
 
 You see that in the measurement example aboove that the temperature is expressed in the unit it was sent in (degrees Celsius). The measure event is decoded and you see the unit and the data type (normalized integer (nint)  used to code the measurement value in this case. You also see the measurement originate from sensor 1 of the remote device.
 
-A [CLASS1_INFORMATION. Type=5,Turn-on](https://grodansparadis.gitbooks.io/the-vscp-specification/class1.information.html#type--3-0x03-on) event looks like this
+A [CLASS1_INFORMATION. Type=5,Turn-on](https://grodansparadis.gitbooks.io/the-vscp-specification/class1.information.html#type3) event looks like this
 
 ![](./images/information_area_turnon.png)
 

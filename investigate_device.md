@@ -12,7 +12,7 @@ VSCP abstracts the physical connection to a device with one of two interfaces ca
 ## Discovery
 You buy a device, you hook it up, VSCP will discovery it through it's heartbeat mechanism. This heartbeat looks different on different transport mediums. It can be a beacon signal on a Bluetooth device, a multicast datagram on wifi and Ethernet, etc. For CAN4VSCP it is a just a heartbeat message. **"Messages"** however is called **"events"** in VSCP. 
 
-If you are intrested the standard VSCP heartbeat the **event** used is [CLASS1.INFORMATION, Type=9, Node Heartbeat](https://grodansparadis.gitbooks.io/the-vscp-specification/class1.information.html#type--9-0x09-node-heartbeat)
+If you are intrested the standard VSCP heartbeat the **event** used is [CLASS1.INFORMATION, Type=9, Node Heartbeat](https://grodansparadis.gitbooks.io/the-vscp-specification/class1.information.html#type9)
 
 On the VSCP Works tool the VSCP session window open up a communication channel through a Level I or Level II interface. This can be a connection to a single device or to a bus with many devices. It can also be a connection to the [VSCP Daemon](https://grodansparadis.gitbooks.io/the-vscp-daemon) which is an **IoT edge server** with a vast range of capabilities.
 
