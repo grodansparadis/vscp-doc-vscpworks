@@ -5,7 +5,7 @@
 With the client window of VSCP works it is possible to open communication sessions that either connect
 
 * Directly to a Level I (CANAL) hardware driver. Depending on the driver, one or more sessions can be opened to the driver. The normal is however one.
-* Open a session to a local or remote VSCP node or daemon which in turn have drivers connected to it. The node should export the [VSCP tcp/ip link protocol](https://grodansparadis.gitbooks.io/the-vscp-specification/vscp_over_tcp_ip.html).
+* Open a session to a local or remote VSCP node or daemon which in turn have drivers connected to it. The node should export the [VSCP tcp/ip link protocol](http://docs.vscp.org/spec/latest/#/./vscp_over_tcp_ip).
 
 To open a new session windoow use the File/New VSCP Client window. You can now select a predefined interface to connect to or create a new.
 
@@ -202,11 +202,11 @@ Here you get information on
 * Head code
 * Timestamp.
 
-The event here is [CLASS1_MEASUREMENT. Type=6,Temperature](https://grodansparadis.gitbooks.io/the-vscp-specification/class1.measurement.html#type6)
+The event here is [CLASS1_MEASUREMENT. Type=6,Temperature](http://docs.vscp.org/spec/latest/#/./class1.measurement?id=type6-0x06-temperature)
 
 You see that in the measurement example aboove that the temperature is expressed in the unit it was sent in (degrees Celsius). The measure event is decoded and you see the unit and the data type (normalized integer (nint)  used to code the measurement value in this case. You also see the measurement originate from sensor 1 of the remote device.
 
-A [CLASS1_INFORMATION. Type=5,Turn-on](https://grodansparadis.gitbooks.io/the-vscp-specification/class1.information.html#type3) event looks like this
+A [CLASS1_INFORMATION. Type=5,Turn-on](http://docs.vscp.org/spec/latest/#/./class1.information?id=type3-0x03-on) event looks like this
 
 ![](./images/information_area_turnon.png)
 

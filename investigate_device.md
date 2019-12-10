@@ -4,7 +4,7 @@
 
 You get that device on your desk, like the one in the picture above. You hook it up. An then? Usually you need to dig up info in manuals trying to understand how to work with the device. Every device is different. Even hooking it up can be a big deal. There is many ways to do so. If it needs power you must at least know what voltage is needed and where to connect it.
 
-VSCP relax much of this. Lets have a look at a piece of hardware. In this case it is a [CAN4VSCP device](https://grodansparadis.gitbooks.io/the-vscp-specification/vscp_over_can_can4vscp.html) but it could be a wireless device, an Ethernet connected device or a Bluetooth mesh device. 
+VSCP relax much of this. Lets have a look at a piece of hardware. In this case it is a [CAN4VSCP device](http://docs.vscp.org/spec/latest/#/./vscp_over_can_can4vscp) but it could be a wireless device, an Ethernet connected device or a Bluetooth mesh device. 
 
 ## The interface abstraction
 VSCP abstracts the physical connection to a device with one of two interfaces called Level I and Leve II. Both telling how higher level software systems talk to a low end device. what the device is and how it works is not important here. It does not even have too be a physical "thing". The interface abstraction layer only specify that on the other side of the interface is a device of some sort and that ee can talk to this device as it was a VSCP device. But it can just act as one, it does not have to be one. Every existing devices can be hooked up in this way. **ALL!**
@@ -12,9 +12,9 @@ VSCP abstracts the physical connection to a device with one of two interfaces ca
 ## Discovery
 You buy a device, you hook it up, VSCP will discovery it through it's heartbeat mechanism. This heartbeat looks different on different transport mediums. It can be a beacon signal on a Bluetooth device, a multicast datagram on wifi and Ethernet, etc. For CAN4VSCP it is a just a heartbeat message. **"Messages"** however is called **"events"** in VSCP. 
 
-If you are intrested the standard VSCP heartbeat the **event** used is [CLASS1.INFORMATION, Type=9, Node Heartbeat](https://grodansparadis.gitbooks.io/the-vscp-specification/class1.information.html#type9)
+If you are intrested the standard VSCP heartbeat the **event** used is [CLASS1.INFORMATION, Type=9, Node Heartbeat](http://docs.vscp.org/spec/latest/#/./class1.information?id=type9-0x09-node-heartbeat)
 
-On the VSCP Works tool the VSCP session window open up a communication channel through a Level I or Level II interface. This can be a connection to a single device or to a bus with many devices. It can also be a connection to the [VSCP Daemon](https://grodansparadis.gitbooks.io/the-vscp-daemon) which is an **IoT edge server** with a vast range of capabilities.
+On the VSCP Works tool the VSCP session window open up a communication channel through a Level I or Level II interface. This can be a connection to a single device or to a bus with many devices. It can also be a connection to the [VSCP Daemon](http://docs.vscp.org/vscpd/latest) which is an **IoT edge server** with a vast range of capabilities.
 
 Here ee will only look at how this works for CANBUS as the transport mechanism. The functionality is much the same for raw Ethernet, TCP/IP, Bluetooth, WIFI etc, even simpler in many cases.
 
@@ -24,7 +24,7 @@ For a CAN4VSCP node we can use any CANBUS adapter to connect a bus with such dev
 
 On Windows you directly use the VSCP driver available for the adapter. There is a driver available for most common CANBUS interfaces.
 
-We add the [Level I socketCAN driver](https://grodansparadis.gitbooks.io/the-vscp-daemon/level1_driver_socketcan.html) SocketCAN to VSCP Works.
+We add the [Level I socketCAN driver](http://docs.vscp.org/vscpd/13.1/#/level1_driver_socketcan) SocketCAN to VSCP Works.
 
 ![](./images/vscpwors_canal_session_socketcan.png)
 
@@ -34,7 +34,7 @@ If we now open a VSCP Works session window and let it stay open for a while we w
 
 ![](./images/socketcan_heartbeat.png)
 
-Selecting the heart beat we see in the right window that this is a heartbeat from a device that have a nickname set to 1. Nickname id's are short id's used as device identifiers instead of [GUID's](https://grodansparadis.gitbooks.io/the-vscp-specification/vscp_globally_unique_identifiers.html) (16-byte) when the transport mechanism is unable to handle the full GUID. So now we know there is a node och the bus. But what device?
+Selecting the heart beat we see in the right window that this is a heartbeat from a device that have a nickname set to 1. Nickname id's are short id's used as device identifiers instead of [GUID's](http://docs.vscp.org/spec/latest/#/./vscp_globally_unique_identifiers) (16-byte) when the transport mechanism is unable to handle the full GUID. So now we know there is a node och the bus. But what device?
 
 ### Scanning for nodes
 Instead of waiting for heartbeats from nodes one can actively search for the nodes. We do this in VSCP Works **scan for devices** window by selecting the interface we want to do the scan on and then hit scan.
@@ -60,7 +60,7 @@ We get plenty of information about the device here. We see that this is an A/D c
 
 This page contains information for human user. 
 
-More interesting is another item, the path to the [MDF (Module Description File)](https://grodansparadis.gitbooks.io/the-vscp-specification/vscp_module_description_file.html). The MDF is an XML file that can describe any VSCP piece of hardware (or simulated hardware (and by tht any hardware) ) and which is readable by a machine. The node itself just holds the URL to the MDF, in this case
+More interesting is another item, the path to the [MDF (Module Description File)](http://docs.vscp.org/spec/latest/#/./vscp_module_description_file). The MDF is an XML file that can describe any VSCP piece of hardware (or simulated hardware (and by tht any hardware) ) and which is readable by a machine. The node itself just holds the URL to the MDF, in this case
 
 [http://www.grodansparadis.com/vilnius/vilnius.html](http://www.grodansparadis.com/vilnius/vilnius.html)
 
@@ -90,7 +90,7 @@ This is how the Vilnius A/D converter device look in the configuration window
 
 ![](./images/vilnius_config_window.png)
 
-This window let us view and change configuration information and real time information such as measurements from the node. The default view is to look at the registers of the node (see [Register Abstraction Model](https://grodansparadis.gitbooks.io/the-vscp-specification/vscp_register_abstraction_model.html) if you want to read more).
+This window let us view and change configuration information and real time information such as measurements from the node. The default view is to look at the registers of the node (see [Register Abstraction Model](http://docs.vscp.org/spec/latest/#/./vscp_register_abstraction_model) if you want to read more).
 
 There are som different views on the page
 
@@ -113,7 +113,7 @@ Abstractions are put above registers and is a way tp present register content of
 
 ![](./images/vilnius_decision_matrix.png)
 
-Next is the [decision matrix](https://grodansparadis.gitbooks.io/the-vscp-specification/vscp_decision_matrix.html). Not all devices have one but when it is there it is a standard way to configure dynamic behaviour of a hardware device.
+Next is the [decision matrix](http://docs.vscp.org/spec/latest/#/./vscp_decision_matrix). Not all devices have one but when it is there it is a standard way to configure dynamic behaviour of a hardware device.
 
 ### Wizards
 

@@ -10,8 +10,8 @@ There is a three video walkthroughs on Youtube that look at some of the essentia
 
 ## Terms used in this documentation
 
-* **Remote node** is often used in this document. A remote node is a node that is connected over tcp/ip and which exports the [VSCP tcp/ip link protocol](https://grodansparadis.gitbooks.io/the-vscp-specification/vscp_over_tcp_ip.html). The most cmmon remote node is the [VSCP Daemon](https://grodansparadis.gitbooks.io/the-vscp-daemon) but it can be any node exporting the interface.
-* **Drivers** VSCP Works can use Level I (CANAL) drivers. This type of driver exports the [CANAL interface](https://grodansparadis.gitbooks.io/the-vscp-daemon/canal_interface_specification.html)
+* **Remote node** is often used in this document. A remote node is a node that is connected over tcp/ip and which exports the [VSCP tcp/ip link protocol](http://docs.vscp.org/spec/latest/#/./vscp_over_tcp_ip). The most cmmon remote node is the [VSCP Daemon](http://docs.vscp.org/vscpd/latest) but it can be any node exporting the interface.
+* **Drivers** VSCP Works can use Level I (CANAL) drivers. This type of driver exports the [CANAL interface](http://docs.vscp.org/canal/latest)
  which is a minimum common interface solution in VSCP that also work for very resource limited devices. A Level I (CANAL) driver usually interface hardware directly but can also implement virtual functionality or connect to remote functionality.
 
 [filename](./bottom_copyright.md ':include')
