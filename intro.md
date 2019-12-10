@@ -14,4 +14,4 @@ There is a three video walkthroughs on Youtube that look at some of the essentia
 * **Drivers** VSCP Works can use Level I (CANAL) drivers. This type of driver exports the [CANAL interface](https://grodansparadis.gitbooks.io/the-vscp-daemon/canal_interface_specification.html)
  which is a minimum common interface solution in VSCP that also work for very resource limited devices. A Level I (CANAL) driver usually interface hardware directly but can also implement virtual functionality or connect to remote functionality.
 
-{% include "./bottom_copyright.md" %}
+[filename](./bottom_copyright.md ':include')

@@ -62,4 +62,4 @@ When you right click on a register row you get the following options
 
 
 
-{% include "./bottom_copyright.md" %}
+[filename](./bottom_copyright.md ':include')

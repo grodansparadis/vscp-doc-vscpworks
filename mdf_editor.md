@@ -1,4 +1,4 @@
-# The Bootloader wizzard
+# The MDF editor
 
 t.b.d.
 

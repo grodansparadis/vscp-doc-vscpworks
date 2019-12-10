@@ -1,4 +1,4 @@
-# The Bootloader wizzard
+# The Device Scan Window
 
 t.b.d.
 

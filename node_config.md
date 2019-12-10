@@ -26,4 +26,4 @@ To the right of the node-id field is a search button. It can be used to check th
 
 The connected/disconnected button tell if the connection to the server is active or not.
 
-{% include "./bottom_copyright.md" %}
+[filename](./bottom_copyright.md ':include')

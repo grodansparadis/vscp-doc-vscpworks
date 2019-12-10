@@ -223,4 +223,4 @@ You can (almost) always have multiple session windows open at the same time too 
 
 For a Level I (CANAL) connection this depends on the driver. Most driver just accept one connection. Some accept several. Check the documentation for the driver to find out.
 
-{% include "./bottom_copyright.md" %}
+[filename](./bottom_copyright.md ':include')

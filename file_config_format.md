@@ -171,4 +171,4 @@ Format for the VSCP Works configuration file.
 </vscpworksconfig>
 ```
 
-{% include "./bottom_copyright.md" %}
+[filename](./bottom_copyright.md ':include')

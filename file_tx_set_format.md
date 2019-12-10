@@ -23,4 +23,4 @@ Format for saved transmission sets from the session window.
 </vscptxset>
 ```
 
-{% include "./bottom_copyright.md" %}
+[filename](./bottom_copyright.md ':include')

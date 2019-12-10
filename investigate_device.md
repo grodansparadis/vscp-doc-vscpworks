@@ -130,4 +130,4 @@ The Vilnius A/D module is a CAN4VSCP device using the CANBUS to transport events
 
 One of the most interesting aspect's is that the actual device does not have to be intelligent or a VSCP aware device at all. In this case the Level I or Level II driver is programed make it look like a VSCP device. The end result is amazing in that for a programmer and for software the interface to "control things" and "get information from things" is the same. A Zigbee, a Z-Wave, a 1-wire, and anything else can be controlled and presented in a common way. Also the devices using different techniques and coming from different manufacturers can be replaced by each other. **No lock down to a single manufacturer or a single technique anymore.**
 
-{% include "./bottom_copyright.md" %}
+[filename](./bottom_copyright.md ':include')

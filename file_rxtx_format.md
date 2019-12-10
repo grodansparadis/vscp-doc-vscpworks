@@ -23,4 +23,4 @@ Format for data files saved from the session receive window.
 ```
 
 
-{% include "./bottom_copyright.md" %}
+[filename](./bottom_copyright.md ':include')
